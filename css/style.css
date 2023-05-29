@@ -1,4 +1,11 @@
+@import url("importFonts.css");
 @import url("normalize.css");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 html,
 body {
   height: 100%;
@@ -9,6 +16,7 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  font-family: "Montserrat", sans-serif;
 }
 
 [class*=page-container] {
@@ -22,6 +30,8 @@ body {
 
 .main {
   flex: 1 0 auto;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 
 .footer {
