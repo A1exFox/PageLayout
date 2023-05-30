@@ -20,6 +20,7 @@ body {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.2px;
+  color: #737373;
 }
 
 [class*=page-container] {
@@ -45,12 +46,12 @@ body {
   }
 }
 .header__logo {
-  font-weight: 700;
   font-size: 24px;
+  font-weight: 700;
   line-height: 133%;
   letter-spacing: 0.1px;
   text-decoration: none;
-  color: #252B42;
+  color: #252b42;
   margin-right: 132px;
 }
 @media (max-width: 768px) {
@@ -70,11 +71,9 @@ body {
 }
 .headerMenu__link {
   font-weight: 600;
-  font-size: 14px;
   line-height: 171%;
-  letter-spacing: 0.2px;
   text-decoration: none;
-  color: #737373;
+  color: inherit;
 }
 .burger {
   position: relative;
