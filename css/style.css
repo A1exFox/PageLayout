@@ -1,5 +1,5 @@
-@import url("importFonts.css");
-@import url("normalize.css");
+@import 'importFonts.css';
+@import 'normalize.css';
 *,
 *::after,
 *::before {
@@ -16,7 +16,10 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
 }
 
 [class*=page-container] {

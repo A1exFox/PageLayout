@@ -1,5 +1,6 @@
-@import url('importFonts.css');
-@import url('normalize.css');
+@import 'importFonts.css';
+@import 'normalize.css';
+@import 'fimgaStyles.scss';
 // =========================================[general]
 *,
 *::after,
@@ -15,7 +16,7 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  font-family: 'Montserrat', sans-serif;
+  @include defaultTextStyle();
 }
 [class*="page-container"] {
   max-width: 1055px;
