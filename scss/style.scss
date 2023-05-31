@@ -29,6 +29,7 @@ body {
 .header {
   flex: 0 0 auto;
   position: absolute;
+  z-index: 2;
   width: 100%;
   &__pageContainer {
     display: flex;
@@ -73,6 +74,7 @@ body {
 // =================[burger icon]
 .burger {
   position: relative;
+  z-index: 4;
   display: none;
   padding: 10px;
   &__strip {
@@ -91,6 +93,7 @@ body {
 @media (max-width: 768px) {
   .headerMenu {
     position: fixed;
+    z-index: 3;
     left: 100%;
     top: 3%;
     bottom: 3%;
@@ -144,7 +147,95 @@ body {
 // =========================================[main]
 .main {
   flex: 1 0 auto;
+  // &__mainBlock {}
 }
+.mainBlock {
+  position: relative;
+  &__pageContainer {
+    position: relative;
+    z-index: 1;
+    padding-top: 184px;
+    padding-bottom: 191px;
+    @media (max-width: 768px) {
+      padding-top: 110px;
+      padding-bottom: 110px;
+    }
+  }
+  &__contentContainer {
+    max-width: 509px;
+    &>*:not(:last-child) {
+      margin-bottom: 35px;
+      @media (max-width: 425px) {
+        margin-bottom: 25px;
+      }
+    }
+  }
+  &__title {
+    @include h1();
+    color: $textColor;
+    margin-top: 0;
+    @media (max-width: 768px) {
+      @include h1Tablet();
+    }
+    @media (max-width: 425px) {
+      @include h1Mobile();
+    }
+  }
+  &__description {
+    @include h4();
+    color: $secondTextColor;
+    margin-top: 0;
+    @media (max-width: 425px) {
+      @include h4Mobile();
+    }
+  }
+  &__buttons {
+    margin: -5px;
+  }
+  &__buttonSpace {
+    display: inline-block;
+    padding: 5px;
+    @media (max-width: 425px) {
+      width: 100%;
+    }
+  }
+  &__button {
+    @include btnText();
+    display: inline-block;
+    padding: 0 36px;
+    padding: 10px 36px;
+    border-radius: 25px;
+    width: 100%;
+    text-align: center;
+    &_solid {
+      color: $lightTextColor;
+      background: $primaryColor;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    &_border {
+      color: $secondaryColor1;
+      border: 1px solid $secondaryColor1;
+      padding-top: 9px;
+      padding-bottom: 9px;
+    }
+  }
+  // &__backgroundContainer {}
+  &__backgroundImg {
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+    @media (max-width: 768px) {
+      opacity: 0.5;
+    }
+  }
+}
+
 // =========================================[footer]
 .footer {
   flex: 0 0 auto;

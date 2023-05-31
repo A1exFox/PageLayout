@@ -32,6 +32,7 @@ body {
 .header {
   flex: 0 0 auto;
   position: absolute;
+  z-index: 2;
   width: 100%;
 }
 .header__pageContainer {
@@ -79,6 +80,7 @@ body {
 
 .burger {
   position: relative;
+  z-index: 4;
   display: none;
   padding: 10px;
 }
@@ -96,6 +98,7 @@ body {
 @media (max-width: 768px) {
   .headerMenu {
     position: fixed;
+    z-index: 3;
     left: 100%;
     top: 3%;
     bottom: 3%;
@@ -140,6 +143,113 @@ body {
 }
 .main {
   flex: 1 0 auto;
+}
+
+.mainBlock {
+  position: relative;
+}
+.mainBlock__pageContainer {
+  position: relative;
+  z-index: 1;
+  padding-top: 184px;
+  padding-bottom: 191px;
+}
+@media (max-width: 768px) {
+  .mainBlock__pageContainer {
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+}
+.mainBlock__contentContainer {
+  max-width: 509px;
+}
+.mainBlock__contentContainer > *:not(:last-child) {
+  margin-bottom: 35px;
+}
+@media (max-width: 425px) {
+  .mainBlock__contentContainer > *:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+.mainBlock__title {
+  font-size: 58px;
+  font-weight: 800;
+  line-height: 138%;
+  color: #252b42;
+  margin-top: 0;
+}
+@media (max-width: 768px) {
+  .mainBlock__title {
+    font-size: 46px;
+  }
+}
+@media (max-width: 425px) {
+  .mainBlock__title {
+    font-size: 38px;
+  }
+}
+.mainBlock__description {
+  font-size: 20px;
+  line-height: 150%;
+  color: #737373;
+  margin-top: 0;
+}
+@media (max-width: 425px) {
+  .mainBlock__description {
+    font-size: 16px;
+  }
+}
+.mainBlock__buttons {
+  margin: -5px;
+}
+.mainBlock__buttonSpace {
+  display: inline-block;
+  padding: 5px;
+}
+@media (max-width: 425px) {
+  .mainBlock__buttonSpace {
+    width: 100%;
+  }
+}
+.mainBlock__button {
+  font-weight: 700;
+  line-height: 200%;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 36px;
+  padding: 10px 36px;
+  border-radius: 25px;
+  width: 100%;
+  text-align: center;
+}
+.mainBlock__button_solid {
+  color: #ffffff;
+  background: #ff7b47;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.mainBlock__button_border {
+  color: #0d5c63;
+  border: 1px solid #0d5c63;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+.mainBlock__backgroundImg {
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right;
+     object-position: right;
+}
+@media (max-width: 768px) {
+  .mainBlock__backgroundImg {
+    opacity: 0.5;
+  }
 }
 
 .footer {

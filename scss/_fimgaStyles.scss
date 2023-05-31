@@ -24,6 +24,12 @@ $dangerColor: #e74040;
   font-weight: 800;
   line-height: 138%;
 }
+@mixin h1Tablet() {
+  font-size: 46px;
+}
+@mixin h1Mobile() {
+  font-size: 38px;
+}
 @mixin h2() {
   font-size: 40px;
   font-weight: 700;
@@ -40,6 +46,9 @@ $dangerColor: #e74040;
   font-size: 20px;
   line-height: 150%;
 }
+@mixin h4Mobile() {
+  font-size: 16px;
+}
 @mixin h5() {
   font-size: 16px;
   line-height: 150%;
@@ -52,6 +61,7 @@ $dangerColor: #e74040;
 @mixin btnText() {
   font-weight: 700;
   line-height: 200%;
+  text-decoration: none;
 }
 @mixin mobileMenu() {
   font-size: 30px;
