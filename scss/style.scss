@@ -19,9 +19,9 @@ body {
   @include defaultTextStyle();
   color: $secondTextColor;
 }
-[class*="page-container"] {
+[class*="pageContainer"] {
   max-width: 1055px;
-  padding: 5px;
+  padding: 0 5px;
   margin: 0 auto;
 }
 
@@ -30,7 +30,7 @@ body {
   flex: 0 0 auto;
   position: absolute;
   width: 100%;
-  &__page-container {
+  &__pageContainer {
     display: flex;
     align-items: center;
     min-height: 104px;

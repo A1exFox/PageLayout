@@ -23,9 +23,9 @@ body {
   color: #737373;
 }
 
-[class*=page-container] {
+[class*=pageContainer] {
   max-width: 1055px;
-  padding: 5px;
+  padding: 0 5px;
   margin: 0 auto;
 }
 
@@ -34,13 +34,13 @@ body {
   position: absolute;
   width: 100%;
 }
-.header__page-container {
+.header__pageContainer {
   display: flex;
   align-items: center;
   min-height: 104px;
 }
 @media (max-width: 768px) {
-  .header__page-container {
+  .header__pageContainer {
     justify-content: space-between;
     min-height: 60px;
   }
