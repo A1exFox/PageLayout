@@ -47,7 +47,7 @@ body {
       margin-right: 0;
     }
   }
-  &__menu {}
+  // &__menu {}
 }
 
 // =================[desktop menu]
@@ -66,10 +66,9 @@ body {
   }
   &__link {
     @include link();
-    text-decoration: none;
     color: inherit;
   }
-  &__burgerContainer {}
+  // &__burgerContainer {}
 }
 // =================[burger icon]
 .burger {
@@ -141,7 +140,6 @@ body {
     }
   }
 }
-
 
 // =========================================[main]
 .main {
