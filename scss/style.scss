@@ -24,19 +24,17 @@ body {
   padding: 0 5px;
   margin: 0 auto;
 }
-
 // =========================================[header]
 .header {
   flex: 0 0 auto;
   position: absolute;
-  z-index: 2;
+  z-index: 100;
   width: 100%;
   &__pageContainer {
     display: flex;
     align-items: center;
     min-height: 104px;
     @media (max-width: 768px) {
-      justify-content: space-between;
       min-height: 60px;
     }
   }
@@ -50,7 +48,6 @@ body {
   }
   // &__menu {}
 }
-
 // =================[desktop menu]
 .headerMenu {
   &__list {
@@ -73,8 +70,11 @@ body {
 }
 // =================[burger icon]
 .burger {
-  position: relative;
-  z-index: 4;
+  // position: relative;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 102;
   display: none;
   padding: 10px;
   &__strip {
@@ -88,12 +88,11 @@ body {
     }
   }
 }
-
 // =================[mobile menu closed]
 @media (max-width: 768px) {
   .headerMenu {
     position: fixed;
-    z-index: 3;
+    z-index: 101;
     left: 100%;
     top: 3%;
     bottom: 3%;
@@ -147,8 +146,10 @@ body {
 // =========================================[main]
 .main {
   flex: 1 0 auto;
-  // &__mainBlock {}
+  &__mainBlock {}
+  &__services {}
 }
+// =================[mainBlock]
 .mainBlock {
   position: relative;
   &__pageContainer {
@@ -158,15 +159,18 @@ body {
     padding-bottom: 191px;
     @media (max-width: 768px) {
       padding-top: 110px;
-      padding-bottom: 110px;
+      padding-bottom: 170px;
     }
   }
   &__contentContainer {
     max-width: 509px;
     &>*:not(:last-child) {
       margin-bottom: 35px;
-      @media (max-width: 425px) {
+      @media (max-width: 768px) {
         margin-bottom: 25px;
+      }
+      @media (max-width: 425px) {
+        margin-bottom: 15px;
       }
     }
   }
@@ -230,6 +234,58 @@ body {
     @media (max-width: 768px) {
       opacity: 0.5;
     }
+  }
+}
+// =================[Services]
+.services {
+  position: relative;
+  z-index: 2;
+  margin-top: -111px;
+  &__pageContainer {}
+  &__cardsContainer {
+    display: flex;
+    margin: -1.4%;
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+  }
+  &__cardSpace {
+    flex: 0 0 33.33%;
+    padding: 1.4%;
+    @media (max-width: 768px) {
+      flex: 1 0 50%;
+    }
+  }
+  &__card {}
+}
+.cardServices {
+  @include shadow();
+  background: #ffffff;
+  height: 100%;
+  padding: 9.84% 11.25%;
+  @media (max-width: 768px) {
+    padding: 20px 25px;
+
+  }
+  &>* {
+    margin: 0 0 10px 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__iconContainer {}
+  &__icon {
+    fill: $secondaryColor1;
+    height: 48px;
+    width: 48px;
+  }
+  &__title {
+    @include h3();
+    color: $textColor;
+  }
+  &__description {
+    @include paragraph();
+    color: $secondTextColor;
   }
 }
 
