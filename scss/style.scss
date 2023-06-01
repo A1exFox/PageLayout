@@ -1,6 +1,6 @@
 @import 'importFonts.css';
 @import 'normalize.css';
-@import 'fimgaStyles.scss';
+@import 'fontStyles.scss';
 // =========================================[general]
 *,
 *::after,
@@ -191,6 +191,7 @@ body {
   }
   &__buttons {
     margin: -5px;
+    font-size: 0;
   }
   &__buttonSpace {
     display: inline-block;
@@ -202,22 +203,18 @@ body {
   &__button {
     @include btnText();
     display: inline-block;
-    padding: 0 36px;
-    padding: 10px 36px;
     border-radius: 25px;
     width: 100%;
     text-align: center;
     &_solid {
       color: $lightTextColor;
       background: $primaryColor;
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding: 10px 36px;
     }
     &_border {
       color: $secondaryColor1;
       border: 1px solid $secondaryColor1;
-      padding-top: 9px;
-      padding-bottom: 9px;
+      padding: 9px 35px;
     }
   }
   // &__backgroundContainer {}

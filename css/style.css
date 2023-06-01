@@ -201,6 +201,7 @@ body {
 }
 .mainBlock__buttons {
   margin: -5px;
+  font-size: 0;
 }
 .mainBlock__buttonSpace {
   display: inline-block;
@@ -212,12 +213,11 @@ body {
   }
 }
 .mainBlock__button {
+  font-size: 14px;
   font-weight: 700;
   line-height: 200%;
   text-decoration: none;
   display: inline-block;
-  padding: 0 36px;
-  padding: 10px 36px;
   border-radius: 25px;
   width: 100%;
   text-align: center;
@@ -225,14 +225,12 @@ body {
 .mainBlock__button_solid {
   color: #ffffff;
   background: #ff7b47;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 36px;
 }
 .mainBlock__button_border {
   color: #0d5c63;
   border: 1px solid #0d5c63;
-  padding-top: 9px;
-  padding-bottom: 9px;
+  padding: 9px 35px;
 }
 .mainBlock__backgroundImg {
   position: absolute;
