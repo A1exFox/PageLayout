@@ -174,7 +174,6 @@ body {
 .main__statistic {
   padding: 80px 0;
 }
-
 .mainBlock {
   position: relative;
 }
@@ -434,6 +433,22 @@ body {
   }
 }
 
+.practice__titleBlock {
+  text-align: center;
+}
+.practice__itemsContainer {
+  display: flex;
+}
+.itemPractice__title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.1px;
+  color: #252b42;
+}
+.itemPractice__text {
+  line-height: 143%;
+}
 .footer {
   flex: 0 0 auto;
 }
