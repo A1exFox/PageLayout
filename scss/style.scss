@@ -65,6 +65,9 @@ body {
   &__link {
     @include link();
     color: inherit;
+    &:hover {
+      text-decoration: underline;
+    }
   }
   // &__burgerContainer {}
 }
@@ -210,15 +213,28 @@ body {
     border-radius: 25px;
     width: 100%;
     text-align: center;
+    transition: 0.3s;
+    &:active {
+      transform: translateY(1px);
+    }
     &_solid {
       color: $lightTextColor;
       background: $primaryColor;
       padding: 10px 36px;
+      &:hover {
+        background: $buttonHoverColor;
+      }
+      &:active {
+        background: $buttonActiveColor;
+      }
     }
     &_border {
       color: $secondaryColor1;
       border: 1px solid $secondaryColor1;
       padding: 9px 35px;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
   // &__backgroundContainer {}

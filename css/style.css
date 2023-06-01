@@ -76,6 +76,9 @@ body {
   text-decoration: none;
   color: inherit;
 }
+.headerMenu__link:hover {
+  text-decoration: underline;
+}
 
 .burger {
   position: fixed;
@@ -226,16 +229,29 @@ body {
   border-radius: 25px;
   width: 100%;
   text-align: center;
+  transition: 0.3s;
+}
+.mainBlock__button:active {
+  transform: translateY(1px);
 }
 .mainBlock__button_solid {
   color: #ffffff;
   background: #ff7b47;
   padding: 10px 36px;
 }
+.mainBlock__button_solid:hover {
+  background: #ff8e61;
+}
+.mainBlock__button_solid:active {
+  background: #ff692d;
+}
 .mainBlock__button_border {
   color: #0d5c63;
   border: 1px solid #0d5c63;
   padding: 9px 35px;
+}
+.mainBlock__button_border:hover {
+  text-decoration: underline;
 }
 .mainBlock__backgroundImg {
   position: absolute;
