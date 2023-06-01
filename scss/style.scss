@@ -16,6 +16,7 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  background: $pageBaseColor;
   @include defaultTextStyle();
   color: $secondTextColor;
 }
@@ -23,6 +24,24 @@ body {
   max-width: 1055px;
   padding: 0 5px;
   margin: 0 auto;
+}
+.titleBlock {
+  &>* {
+    margin: 0;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  &__title {
+    @include h2();
+    color: $textColor;
+    @media (max-width:425px) {
+      @include h2Mobile();
+    }
+  }
+  &__description {
+    @include paragraph();
+  }
 }
 // =========================================[header]
 .header {
@@ -46,7 +65,7 @@ body {
       margin-right: 0;
     }
   }
-  // &__menu {}
+  &__menu {}
 }
 // =================[desktop menu]
 .headerMenu {
@@ -69,11 +88,10 @@ body {
       text-decoration: underline;
     }
   }
-  // &__burgerContainer {}
+  &__burgerContainer {}
 }
 // =================[burger icon]
 .burger {
-  // position: relative;
   position: fixed;
   right: 10px;
   top: 10px;
@@ -150,7 +168,12 @@ body {
 .main {
   flex: 1 0 auto;
   &__mainBlock {}
-  &__services {}
+  &__services {
+    margin-top: -111px;
+  }
+  &__statistic {
+    padding: 80px 0;
+  }
 }
 // =================[mainBlock]
 .mainBlock {
@@ -190,7 +213,6 @@ body {
   }
   &__description {
     @include h4();
-    color: $secondTextColor;
     margin-top: 0;
     @media (max-width: 425px) {
       @include h4Mobile();
@@ -237,7 +259,7 @@ body {
       }
     }
   }
-  // &__backgroundContainer {}
+  &__backgroundContainer {}
   &__backgroundImg {
     position: absolute;
     z-index: 0;
@@ -256,7 +278,6 @@ body {
 .services {
   position: relative;
   z-index: 2;
-  margin-top: -111px;
   &__pageContainer {}
   &__cardsContainer {
     display: flex;
@@ -316,7 +337,66 @@ body {
   }
   &__description {
     @include paragraph();
-    color: $secondTextColor;
+  }
+}
+// =================[Statistic]
+.statistic {
+  &__pageContainer {}
+  &__titleBlock {
+    text-align: center;
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+    &_textWidth {
+      max-width: 520px;
+      margin: 0 auto;
+    }
+  }
+  &__cardsContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: -1.847%;
+  }
+  &__card {
+    padding: 1.847%;
+    flex: 0 1 25%;
+    @media (max-width: 768px) {
+      flex-basis: 50%;
+    }
+  }
+}
+.cardStat {
+  &__body {
+    background: $whiteColor;
+    text-align: center;
+    padding: 30px 10px;
+    height: 100%;
+    &>*:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  &__imgContainer {
+    font-size: 0;
+  }
+  &__img {
+    width: 48px;
+    height: 48px;
+  }
+  &__index {
+    @include h2();
+    color: $textColor;
+    white-space: nowrap;
+    @media (max-width: 425px) {
+      @include h2Mobile();
+    }
+  }
+  &__text {
+    @include h5();
+    @media (max-width: 425px) {
+      @include defaultTextStyle();
+      @include paragraph();
+    }
   }
 }
 

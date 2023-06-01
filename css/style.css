@@ -16,6 +16,7 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  background: #fafafa;
   font-family: "Montserrat";
   font-size: 14px;
   font-weight: 500;
@@ -27,6 +28,27 @@ body {
   max-width: 1055px;
   padding: 0 5px;
   margin: 0 auto;
+}
+
+.titleBlock > * {
+  margin: 0;
+}
+.titleBlock > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+.titleBlock__title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 142%;
+  color: #252b42;
+}
+@media (max-width: 425px) {
+  .titleBlock__title {
+    font-size: 30px;
+  }
+}
+.titleBlock__description {
+  line-height: 143%;
 }
 
 .header {
@@ -59,7 +81,6 @@ body {
     margin-right: 0;
   }
 }
-
 .headerMenu__list {
   display: flex;
   flex-wrap: wrap;
@@ -79,7 +100,6 @@ body {
 .headerMenu__link:hover {
   text-decoration: underline;
 }
-
 .burger {
   position: fixed;
   right: 10px;
@@ -148,6 +168,13 @@ body {
 .main {
   flex: 1 0 auto;
 }
+.main__services {
+  margin-top: -111px;
+}
+.main__statistic {
+  padding: 80px 0;
+}
+
 .mainBlock {
   position: relative;
 }
@@ -199,7 +226,6 @@ body {
 .mainBlock__description {
   font-size: 20px;
   line-height: 150%;
-  color: #737373;
   margin-top: 0;
 }
 @media (max-width: 425px) {
@@ -274,7 +300,6 @@ body {
 .services {
   position: relative;
   z-index: 2;
-  margin-top: -111px;
 }
 .services__cardsContainer {
   display: flex;
@@ -337,7 +362,76 @@ body {
 }
 .cardServices__description {
   line-height: 143%;
-  color: #737373;
+}
+
+.statistic__titleBlock {
+  text-align: center;
+}
+.statistic__titleBlock:not(:last-child) {
+  margin-bottom: 50px;
+}
+.statistic__titleBlock_textWidth {
+  max-width: 520px;
+  margin: 0 auto;
+}
+.statistic__cardsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: -1.847%;
+}
+.statistic__card {
+  padding: 1.847%;
+  flex: 0 1 25%;
+}
+@media (max-width: 768px) {
+  .statistic__card {
+    flex-basis: 50%;
+  }
+}
+
+.cardStat__body {
+  background: #ffffff;
+  text-align: center;
+  padding: 30px 10px;
+  height: 100%;
+}
+.cardStat__body > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+.cardStat__imgContainer {
+  font-size: 0;
+}
+.cardStat__img {
+  width: 48px;
+  height: 48px;
+}
+.cardStat__index {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 142%;
+  color: #252b42;
+  white-space: nowrap;
+}
+@media (max-width: 425px) {
+  .cardStat__index {
+    font-size: 30px;
+  }
+}
+.cardStat__text {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.1px;
+}
+@media (max-width: 425px) {
+  .cardStat__text {
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    line-height: 143%;
+  }
 }
 
 .footer {

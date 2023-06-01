@@ -1,4 +1,6 @@
 $primaryColor: #ff7b47;
+$pageBaseColor: #fafafa;
+$whiteColor: #ffffff;
 $buttonHoverColor: #ff8e61;
 $buttonActiveColor: #ff692d;
 $secondaryColor1: #0d5c63;
@@ -37,6 +39,12 @@ $dangerColor: #e74040;
   font-weight: 700;
   line-height: 142%;
 }
+@mixin h2Tablet() {
+  font-size: 36px;
+}
+@mixin h2Mobile() {
+  font-size: 30px;
+}
 @mixin h3() {
   font-size: 24px;
   font-weight: 700;
@@ -53,6 +61,7 @@ $dangerColor: #e74040;
 }
 @mixin h5() {
   font-size: 16px;
+  font-weight: 700;
   line-height: 150%;
   letter-spacing: 0.1px;
 }
