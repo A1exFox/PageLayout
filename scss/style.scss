@@ -263,6 +263,21 @@ body {
   background: #ffffff;
   height: 100%;
   padding: 9.84% 11.25%;
+  cursor: default;
+  transition: 0.3s;
+  &:hover {
+    background: $secondaryColor1;
+    .cardServices {
+      &__icon {
+        fill: $lightTextColor;
+      }
+      &__title,
+      &__description {
+        color: $lightTextColor;
+      }
+    }
+
+  }
   @media (max-width: 768px) {
     padding: 20px 25px;
 

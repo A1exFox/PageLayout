@@ -283,6 +283,17 @@ body {
   background: #ffffff;
   height: 100%;
   padding: 9.84% 11.25%;
+  cursor: default;
+  transition: 0.3s;
+}
+.cardServices:hover {
+  background: #0d5c63;
+}
+.cardServices:hover .cardServices__icon {
+  fill: #ffffff;
+}
+.cardServices:hover .cardServices__title, .cardServices:hover .cardServices__description {
+  color: #ffffff;
 }
 @media (max-width: 768px) {
   .cardServices {
