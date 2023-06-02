@@ -382,6 +382,9 @@ body {
     text-align: center;
     padding: 30px 10px;
     height: 100%;
+    &:hover {
+      @include shadow();
+    }
     &>*:not(:last-child) {
       margin-bottom: 10px;
     }
