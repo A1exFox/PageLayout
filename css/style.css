@@ -188,6 +188,10 @@ body {
     padding-top: 0;
   }
 }
+.main__whoweare {
+  padding-top: 100px;
+  padding-bottom: 136px;
+}
 
 .mainBlock {
   position: relative;
@@ -525,6 +529,125 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.whoweare {
+  background: #ffffff;
+}
+.whoweare__titleBlock {
+  text-align: center;
+}
+.whoweare__titleBlock > *:not(:last-child) {
+  margin-bottom: 15px;
+}
+.whoweare__titleBlock:not(:last-child) {
+  margin-bottom: 100px;
+}
+.whoweare__titleBlock .titleBlock__description {
+  max-width: 520px;
+  margin: 0 auto;
+}
+.whoweare__body {
+  display: flex;
+  justify-content: space-between;
+}
+.whoweare__mediaContainer {
+  position: relative;
+  flex: 0 0 57.41%;
+  padding-top: 42.29%;
+}
+.whoweare__media {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.whoweare__mediaEffect {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.8392156863) 100%);
+}
+.whoweare__buttonPlay {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+.whoweare__buttonPlayCircle {
+  width: 98px;
+  height: 98px;
+  background: #0d5c63;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: 0.1s;
+}
+.whoweare__buttonPlayCircle:hover {
+  transform: translate(-50%, -50%) scale(1.03);
+}
+.whoweare__symbolPlay {
+  font-size: 46px;
+  width: 46px;
+  height: 46px;
+  color: #ffffff;
+  transform: translate(36px, 21px);
+}
+.whoweare__contentContainer {
+  flex: 0 0 31.86%;
+}
+.contentWhoWeAre__titleBlock:first-child {
+  margin-top: 20px;
+}
+.contentWhoWeAre__titleBlock:not(:last-child) {
+  margin-bottom: 50px;
+}
+.contentWhoWeAre__list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.contentWhoWeAre__item {
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+}
+.contentWhoWeAre__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+.contentWhoWeAre__item:hover .contentWhoWeAre__icon {
+  fill: #0d5c63;
+}
+.contentWhoWeAre__item:hover .contentWhoWeAre__text {
+  text-decoration: underline;
+}
+.contentWhoWeAre__iconContainer {
+  flex: 0 0 52px;
+}
+.contentWhoWeAre__icon {
+  width: 32px;
+  height: 32px;
+  fill: #ff7b47;
+  transition: 0.1s;
+}
+.contentWhoWeAre__subtitle {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.1px;
+  color: #252b42;
+  margin: 0;
+}
+.contentWhoWeAre__subtitle:not(:last-child) {
+  margin-bottom: 5px;
+}
+.contentWhoWeAre__text {
+  font-weight: 600;
+  line-height: 24px;
 }
 
 .footer {
