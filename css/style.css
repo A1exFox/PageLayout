@@ -438,6 +438,21 @@ body {
 }
 .practice__itemsContainer {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: -1.84%;
+}
+.practice__item {
+  padding: 1.84%;
+  flex: 0 1 25%;
+}
+
+.itemPractice__content {
+  padding: 12.99%;
+  background: #ffffff;
+}
+.itemPractice__content > *:not(:last-child) {
+  margin-bottom: 15px;
 }
 .itemPractice__title {
   font-size: 16px;
@@ -449,6 +464,20 @@ body {
 .itemPractice__text {
   line-height: 143%;
 }
+.itemPractice__imageContainer {
+  position: relative;
+  padding-top: 59.74%;
+}
+.itemPractice__image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .footer {
   flex: 0 0 auto;
 }

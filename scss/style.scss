@@ -407,13 +407,27 @@ body {
   }
   &__itemsContainer {
     display: flex;
-
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: -1.84%;
   }
-  &__item {}
+  &__item {
+    padding: 1.84%;
+    flex: 0 1 25%;
+  }
 }
 .itemPractice {
-  &__body {}
-  &__content {}
+  &__body {
+    // display: flex;
+    // flex-direction: column;
+  }
+  &__content {
+    padding: 12.99%;
+    background: $whiteColor;
+    &>*:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
   &__title {
     @include h5();
     color: $textColor;
@@ -421,8 +435,18 @@ body {
   &__text {
     @include paragraph();
   }
-  &__imageContainer {}
-  &__image {}
+  &__imageContainer {
+    position: relative;
+    padding-top: 59.74%;
+  }
+  &__image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 // =========================================[footer]
