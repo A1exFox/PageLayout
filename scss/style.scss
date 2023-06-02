@@ -174,7 +174,16 @@ body {
   &__statistic {
     padding: 80px 0;
   }
-  &__practice {}
+  &__practice {
+    padding-top: 125px;
+    padding-bottom: 80px;
+    @media (max-width:768px) {
+      padding-top: 60px;
+    }
+    @media (max-width:425px) {
+      padding-top: 0;
+    }
+  }
 }
 // =================[mainBlock]
 .mainBlock {
@@ -404,6 +413,9 @@ body {
 .practice {
   &__titleBlock {
     text-align: center;
+    &:not(:last-child) {
+      margin-bottom: 45px;
+    }
   }
   &__itemsContainer {
     display: flex;
@@ -414,15 +426,32 @@ body {
   &__item {
     padding: 1.84%;
     flex: 0 1 25%;
+    @media (max-width: 768px) {
+      flex-basis: 50%;
+    }
+    @media (max-width:425px) {
+      flex-basis: 100%;
+    }
   }
 }
 .itemPractice {
   &__body {
-    // display: flex;
-    // flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: 0.1s;
+    &:hover {
+      @include shadow();
+      cursor: pointer;
+      transform: scale(1.02);
+    }
   }
   &__content {
+    flex: 1 0 auto;
     padding: 12.99%;
+    @media (max-width: 768px) {
+      padding: 25px;
+    }
     background: $whiteColor;
     &>*:not(:last-child) {
       margin-bottom: 15px;
@@ -436,6 +465,7 @@ body {
     @include paragraph();
   }
   &__imageContainer {
+    flex: 0 0 auto;
     position: relative;
     padding-top: 59.74%;
   }

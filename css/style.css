@@ -174,6 +174,21 @@ body {
 .main__statistic {
   padding: 80px 0;
 }
+.main__practice {
+  padding-top: 125px;
+  padding-bottom: 80px;
+}
+@media (max-width: 768px) {
+  .main__practice {
+    padding-top: 60px;
+  }
+}
+@media (max-width: 425px) {
+  .main__practice {
+    padding-top: 0;
+  }
+}
+
 .mainBlock {
   position: relative;
 }
@@ -436,6 +451,9 @@ body {
 .practice__titleBlock {
   text-align: center;
 }
+.practice__titleBlock:not(:last-child) {
+  margin-bottom: 45px;
+}
 .practice__itemsContainer {
   display: flex;
   justify-content: center;
@@ -446,10 +464,37 @@ body {
   padding: 1.84%;
   flex: 0 1 25%;
 }
+@media (max-width: 768px) {
+  .practice__item {
+    flex-basis: 50%;
+  }
+}
+@media (max-width: 425px) {
+  .practice__item {
+    flex-basis: 100%;
+  }
+}
 
+.itemPractice__body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: 0.1s;
+}
+.itemPractice__body:hover {
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.0705882353);
+  cursor: pointer;
+  transform: scale(1.02);
+}
 .itemPractice__content {
+  flex: 1 0 auto;
   padding: 12.99%;
   background: #ffffff;
+}
+@media (max-width: 768px) {
+  .itemPractice__content {
+    padding: 25px;
+  }
 }
 .itemPractice__content > *:not(:last-child) {
   margin-bottom: 15px;
@@ -465,6 +510,7 @@ body {
   line-height: 143%;
 }
 .itemPractice__imageContainer {
+  flex: 0 0 auto;
   position: relative;
   padding-top: 59.74%;
 }
