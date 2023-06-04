@@ -192,6 +192,11 @@ body {
   padding-top: 100px;
   padding-bottom: 136px;
 }
+@media (max-width: 768px) {
+  .main__whoweare {
+    padding: 60px 0;
+  }
+}
 
 .mainBlock {
   position: relative;
@@ -543,6 +548,16 @@ body {
 .whoweare__titleBlock:not(:last-child) {
   margin-bottom: 100px;
 }
+@media (max-width: 768px) {
+  .whoweare__titleBlock:not(:last-child) {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 425px) {
+  .whoweare__titleBlock:not(:last-child) {
+    margin-bottom: 45px;
+  }
+}
 .whoweare__titleBlock .titleBlock__description {
   max-width: 520px;
   margin: 0 auto;
@@ -551,12 +566,20 @@ body {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 768px) {
+  .whoweare__body {
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+  }
+}
 .whoweare__mediaContainer {
-  position: relative;
   flex: 0 0 57.41%;
-  padding-top: 42.29%;
 }
 .whoweare__media {
+  position: relative;
+  padding-top: 73.7%;
+}
+.whoweare__img {
   position: absolute;
   left: 0;
   top: 0;
@@ -585,10 +608,14 @@ body {
   border-radius: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
-  transition: 0.1s;
+  transition: 0.3s;
 }
 .whoweare__buttonPlayCircle:hover {
-  transform: translate(-50%, -50%) scale(1.03);
+  background: #ff692d;
+}
+.whoweare__buttonPlayCircle:hover .whoweare__symbolPlay {
+  font-size: 42px;
+  transform: translate(36px, 24px);
 }
 .whoweare__symbolPlay {
   font-size: 46px;
@@ -596,12 +623,25 @@ body {
   height: 46px;
   color: #ffffff;
   transform: translate(36px, 21px);
+  transition: 0.1s;
 }
 .whoweare__contentContainer {
-  flex: 0 0 31.86%;
+  flex: 0 1 345px;
+  padding-left: 10px;
+}
+@media (max-width: 768px) {
+  .whoweare__contentContainer {
+    flex-basis: auto;
+    padding-bottom: 45px;
+  }
 }
 .contentWhoWeAre__titleBlock:first-child {
   margin-top: 20px;
+}
+@media (max-width: 768px) {
+  .contentWhoWeAre__titleBlock:first-child {
+    margin-top: 20px;
+  }
 }
 .contentWhoWeAre__titleBlock:not(:last-child) {
   margin-bottom: 50px;
