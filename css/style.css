@@ -616,10 +616,6 @@ body {
 .whoweare__buttonPlayCircle:hover {
   background: #ff692d;
 }
-.whoweare__buttonPlayCircle:hover .whoweare__symbolPlay {
-  font-size: 42px;
-  transform: translate(36px, 24px);
-}
 .whoweare__symbolPlay {
   font-size: 46px;
   width: 46px;

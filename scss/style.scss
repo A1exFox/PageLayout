@@ -560,10 +560,6 @@ body {
     transition: 0.3s;
     &:hover {
       background: $buttonActiveColor;
-      .whoweare__symbolPlay {
-        font-size: 42px;
-        transform: translate(36px, 24px);
-      }
     }
   }
   &__symbolPlay {
