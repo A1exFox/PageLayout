@@ -197,6 +197,9 @@ body {
   &__subscribe {
     margin-top: 70px;
   }
+  &__getintouch {
+    margin-top: 80px;
+  }
 }
 // =================[mainBlock]
 .mainBlock {
@@ -750,6 +753,112 @@ body {
     border-radius: 0px 5px 5px 0;
   }
 }
+// =================[getintouch]
+.getintouch {
+  &__pageContainer {
+    &_w995 {
+      max-width: 995px;
+    }
+  }
+  &__titleBlock {
+    text-align: center;
+    &:not(:last-child) {
+      margin-bottom: 80px;
+      @media (max-width:768px) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+  &__cardsContainer {
+    display: flex;
+    @media (max-width:768px) {
+      flex-wrap: wrap;
+    }
+  }
+  &__card {
+    flex: 0 0 33.33%;
+    @media (max-width:768px) {
+      flex: 1 0 50%;
+    }
+  }
+}
+.cardGetInTouch {
+  background: $whiteColor;
+  margin: 30px 0;
+  padding: 50px 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  &>*:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  transition: 0.3s;
+  &:hover {
+    margin: 0;
+    padding: 80px 5px;
+    background: $darkBackgroundColor;
+    .cardGetInTouch {
+      &__image {
+        fill: $lightTextColor;
+      }
+      &__link {
+        color: $lightTextColor;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      &__label {
+        color: $lightTextColor;
+      }
+      &__button {
+        color: $lightTextColor;
+        border-color: $lightTextColor;
+        &:hover {
+          border-color: $primaryColor;
+          background: $primaryColor;
+          color: $whiteColor;
+        }
+      }
+    }
+  }
+  @media (max-width:768px) {
+    margin: 0;
+    padding: 30px 5px;
+    &:hover {
+      padding: 30px 5px;
+    }
+  }
+  &__imageContainer {
+    height: 72px;
+  }
+  &__image {
+    height: 100%;
+  }
+  &__contactsContainer {
+    flex: 1 1 auto;
+  }
+  &__link {
+    @include h6();
+    color: $textColor;
+    text-decoration: none;
+  }
+  &__label {
+    @include h5();
+    color: $textColor;
+  }
+  &__buttonContainer {}
+  &__button {
+    display: inline-block;
+    @include h6();
+    text-decoration: none;
+    color: $primaryColor;
+    padding: 10px 20px;
+    border: 1px solid $primaryColor;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+}
+
 // =========================================[footer]
 .footer {
   flex: 0 0 auto;
