@@ -16,7 +16,7 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  background: #fafafa;
+  background: #f3f3f3;
   font-family: "Montserrat";
   font-size: 14px;
   font-weight: 500;
@@ -205,6 +205,14 @@ body {
 }
 .main__getintouch {
   margin-top: 80px;
+}
+.main__contactUs {
+  margin-top: 148px;
+}
+@media (max-width: 768px) {
+  .main__contactUs {
+    margin-top: 80px;
+  }
 }
 
 .mainBlock {
@@ -904,6 +912,10 @@ body {
   flex: 1 1 auto;
 }
 .cardGetInTouch__link {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
   font-weight: 600;
   line-height: 24px;
   color: #252b42;
@@ -926,6 +938,70 @@ body {
   border: 1px solid #ff7b47;
   border-radius: 5px;
   transition: 0.3s;
+}
+
+.contactUs {
+  background: #fafafa;
+}
+.contactUs__pageContainer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.contactUs__contentContainer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: -5px;
+}
+.contactUs__contentContainer > * {
+  padding: 5px;
+}
+.contactUs__textContainer {
+  flex: 1 1 auto;
+  color: #252b42;
+}
+.contactUs__textContainer > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .contactUs__textContainer {
+    text-align: center;
+  }
+}
+.contactUs__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 133%;
+  letter-spacing: 0.1px;
+  text-decoration: none;
+  margin: 0;
+}
+.contactUs__text {
+  margin: 0;
+  line-height: 143%;
+}
+.contactUs__buttonContainer {
+  flex: 0 0 auto;
+}
+@media (max-width: 768px) {
+  .contactUs__buttonContainer {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+}
+.contactUs__button {
+  display: inline-block;
+  background: #ff7b47;
+  border-radius: 5px;
+  padding: 15px 40px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 200%;
+  text-decoration: none;
+  color: #ffffff;
+}
+.contactUs__button:hover {
+  background: #ff8e61;
 }
 
 .footer {

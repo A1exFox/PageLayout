@@ -16,7 +16,7 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  background: $pageBaseColor;
+  background: $lightBaseColor;
   @include defaultTextStyle();
   color: $secondTextColor;
 }
@@ -199,6 +199,12 @@ body {
   }
   &__getintouch {
     margin-top: 80px;
+  }
+  &__contactUs {
+    margin-top: 148px;
+    @media (max-width:768px) {
+      margin-top: 80px;
+    }
   }
 }
 // =================[mainBlock]
@@ -841,6 +847,9 @@ body {
     flex: 1 1 auto;
   }
   &__link {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
     @include h6();
     color: $textColor;
     text-decoration: none;
@@ -861,7 +870,59 @@ body {
     transition: 0.3s;
   }
 }
-
+// =================[contactUs]
+.contactUs {
+  background: $pageBaseColor;
+  &__pageContainer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  &__contentContainer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: -5px;
+    &>* {
+      padding: 5px;
+    }
+  }
+  &__textContainer {
+    flex: 1 1 auto;
+    color: $textColor;
+    &>*:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    @media (max-width:768px) {
+      text-align: center;
+    }
+  }
+  &__title {
+    @include h3();
+    margin: 0;
+  }
+  &__text {
+    margin: 0;
+    @include paragraph();
+  }
+  &__buttonContainer {
+    flex: 0 0 auto;
+    @media (max-width:768px) {
+      flex: 1 1 auto;
+      text-align: center;
+    }
+  }
+  &__button {
+    display: inline-block;
+    background: $primaryColor;
+    border-radius: 5px;
+    padding: 15px 40px;
+    @include btnText();
+    color: $lightTextColor;
+    &:hover {
+      background: $buttonHoverColor;
+    }
+  }
+}
 // =========================================[footer]
 .footer {
   flex: 0 0 auto;
