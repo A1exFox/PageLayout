@@ -811,6 +811,10 @@ body {
   border: 1px solid #e6e6e6;
   border-left: 0;
   border-radius: 0px 5px 5px 0;
+  cursor: pointer;
+}
+.subscribe__submit:hover {
+  background: #ff8e61;
 }
 
 .getintouch__pageContainer_w995 {
@@ -880,7 +884,6 @@ body {
 .cardGetInTouch:hover .cardGetInTouch__button:hover {
   border-color: #ff7b47;
   background: #ff7b47;
-  color: #ffffff;
 }
 @media (max-width: 768px) {
   .cardGetInTouch {

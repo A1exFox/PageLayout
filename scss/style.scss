@@ -751,6 +751,10 @@ body {
     border: 1px solid $inputBorder;
     border-left: 0;
     border-radius: 0px 5px 5px 0;
+    cursor: pointer;
+    &:hover {
+      background: $buttonHoverColor;
+    }
   }
 }
 // =================[getintouch]
@@ -816,7 +820,6 @@ body {
         &:hover {
           border-color: $primaryColor;
           background: $primaryColor;
-          color: $whiteColor;
         }
       }
     }
