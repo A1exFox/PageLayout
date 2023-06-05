@@ -1,5 +1,7 @@
 $primaryColor: #ff7b47;
 $pageBaseColor: #fafafa;
+$inputBackground: #f9f9f9;
+$inputBorder: #e6e6e6;
 $whiteColor: #ffffff;
 $buttonHoverColor: #ff8e61;
 $buttonActiveColor: #ff692d;
@@ -92,6 +94,10 @@ $dangerColor: #e74040;
   font-weight: 600;
   line-height: 171%;
   text-decoration: none;
+}
+@mixin email() {
+  font-weight: 400;
+  line-height: 200%;
 }
 @mixin shadow() {
   box-shadow: 0px 13px 19px #00000012;

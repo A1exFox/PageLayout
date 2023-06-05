@@ -200,6 +200,9 @@ body {
 .main__clients {
   padding-top: 50px;
 }
+.main__subscribe {
+  margin-top: 70px;
+}
 
 .mainBlock {
   position: relative;
@@ -709,6 +712,102 @@ body {
 .cardClients__svg:hover {
   fill: #ff8e61;
   transform: scale(1.03);
+}
+
+.subscribe {
+  position: relative;
+  margin-bottom: 20px;
+}
+.subscribe::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+  width: 100%;
+  height: 77px;
+  z-index: 1;
+  background: #252b42;
+}
+@media (max-width: 768px) {
+  .subscribe::after {
+    background: transparent;
+  }
+}
+@media (max-width: 768px) {
+  .subscribe {
+    margin-bottom: 0;
+  }
+}
+.subscribe__pageContainer_w996 {
+  max-width: 986px;
+  padding: 0;
+}
+.subscribe__contentContainer {
+  position: relative;
+  z-index: 5;
+  background: #17213c;
+  padding: 30px 50px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .subscribe__contentContainer {
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 10px;
+  }
+}
+.subscribe__label {
+  flex: 0 1 45%;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 133%;
+  letter-spacing: 0.1px;
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .subscribe__label {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+  .subscribe__label:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+.subscribe__form {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 768px) {
+  .subscribe__form {
+    justify-content: center;
+  }
+}
+.subscribe__email {
+  flex: 0 1 333px;
+  font-weight: 400;
+  line-height: 200%;
+  color: #737373;
+  background: #f9f9f9;
+  padding: 15px 20px;
+  border: 1px solid #e6e6e6;
+  border-right: 0;
+  border-radius: 5px 0 0 5px;
+  width: 100%;
+}
+.subscribe__submit {
+  font-weight: 400;
+  line-height: 200%;
+  color: #ffffff;
+  background: #ff7b47;
+  padding: 15px 22.5px;
+  border: 1px solid #e6e6e6;
+  border-left: 0;
+  border-radius: 0px 5px 5px 0;
 }
 
 .footer {
