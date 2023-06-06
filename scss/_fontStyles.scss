@@ -1,0 +1,117 @@
+$primaryColor: #ff7b47;
+$pageBaseColor: #fafafa;
+$lightBaseColor: #f3f3f3;
+$inputBackground: #f9f9f9;
+$inputBorder: #e6e6e6;
+$whiteColor: #ffffff;
+$buttonHoverColor: #ff8e61;
+$buttonActiveColor: #ff692d;
+$secondaryColor1: #0d5c63;
+$secondaryColor2: #17213c;
+$backgroundGradient1: linear-gradient(to bottom, #d71489 0%, #004788 100%);
+$textColor: #252b42;
+$secondTextColor: #737373;
+$lightTextColor: #ffffff;
+$darkBackgroundColor: #252b42;
+$lightBackgroundColor: #ffffff;
+$hoverColor: #2a7cc7;
+$disabledElementColor: #8ec2f2;
+$mutedColor: #bdbdbd;
+$successColor: #2dc071;
+$alertColor: #e77c40;
+$dangerColor: #e74040;
+@mixin defaultTextStyle() {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+@mixin h1() {
+  font-size: 58px;
+  font-weight: 800;
+  line-height: 138%;
+}
+@mixin h1Tablet() {
+  font-size: 46px;
+}
+@mixin h1Mobile() {
+  font-size: 38px;
+}
+@mixin h2() {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 142%;
+}
+@mixin h2Tablet() {
+  font-size: 36px;
+}
+@mixin h2Mobile() {
+  font-size: 30px;
+}
+@mixin h3() {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 133%;
+  letter-spacing: 0.1px;
+  text-decoration: none;
+}
+@mixin h4() {
+  font-size: 20px;
+  line-height: 150%;
+}
+@mixin h4Mobile() {
+  font-size: 16px;
+}
+@mixin h5() {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.1px;
+}
+@mixin h6() {
+  font-weight: 600;
+  line-height: 24px;
+}
+@mixin btnText() {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 200%;
+  text-decoration: none;
+}
+@mixin mobileMenu() {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 150%;
+}
+@mixin paragraph() {
+  line-height: 143%;
+}
+@mixin list() {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+}
+@mixin link() {
+  font-weight: 600;
+  line-height: 171%;
+  text-decoration: none;
+}
+@mixin email() {
+  font-weight: 400;
+  line-height: 200%;
+}
+@mixin shadow() {
+  box-shadow: 0px 13px 19px #00000012;
+}
+@mixin dramatic() {
+  box-shadow: -31px -22px 19px #000000;
+}
+@mixin lightDropshadow() {
+  box-shadow: 0px 2px 4px #000000;
+}
+@mixin textShadow() {
+  box-shadow: 0px 13px 19px #000000;
+}
+@mixin linearGradient() {
+  background: linear-gradient(180deg, #00000000 14.58%, #383838d6 100%);
+}
