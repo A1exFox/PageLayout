@@ -927,6 +927,7 @@ body {
 .footer {
   flex: 0 0 auto;
   &__top {}
+  &__bottom {}
 }
 // =================[topFooter][desktop]
 .topFooter {
@@ -1048,4 +1049,53 @@ body {
     }
   }
 }
-// =================[downFooter]
+// =================[bottomFooter]
+.bottomFooter {
+  background: $pageBaseColor;
+  &__pageContainer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  &__contentContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: -5px;
+    &>* {
+      padding: 5px;
+    }
+  }
+  &__label {
+    flex: 1 1 auto;
+    @media (max-width:768px) {
+      flex-basis: 100%;
+      text-align: center;
+    }
+  }
+  &__iconsContainer {
+    flex: 0 0 auto;
+    margin-right: 36px;
+    display: flex;
+    align-items: center;
+    @media (max-width:768px) {
+      flex-basis: 100%;
+      margin-right: 0;
+      justify-content: center;
+    }
+  }
+  &__iconSpace {
+    width: 24px;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  &__iconLink {
+    &:hover>* {
+      transform: scale(1.2);
+    }
+  }
+  &__icon {
+    transition: 0.3s;
+    width: 100%;
+  }
+}
