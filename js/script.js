@@ -9,6 +9,9 @@ function clickSomewhere(event) {
   } else if (event.target.closest('.burger')) {
     toggleMenu('showMobileMenu');
   }
+  if (event.target.closest('.topFooter__listTitle')) {
+    event.target.parentElement.classList.toggle('footerActiveList');
+  }
 }
 function isIgnoreElements(target) {
   if (target.classList.contains('headerMenu')) return true;

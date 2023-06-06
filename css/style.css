@@ -1007,3 +1007,132 @@ body {
 .footer {
   flex: 0 0 auto;
 }
+.topFooter {
+  background: #17213c;
+}
+.topFooter__pageContainer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.topFooter__contentContainer {
+  display: flex;
+  align-items: flex-start;
+  margin: -1.39%;
+}
+@media (max-width: 768px) {
+  .topFooter__contentContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -20px;
+  }
+}
+.topFooter__listContainer {
+  flex: 0 1 auto;
+  padding: 1.39%;
+}
+@media (max-width: 768px) {
+  .topFooter__listContainer {
+    flex: 1 0 50%;
+    padding: 20px;
+    max-width: 500px;
+  }
+}
+@media (max-width: 425px) {
+  .topFooter__listContainer {
+    flex: 1 0 100%;
+  }
+}
+.topFooter__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.topFooter__item_flex {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .topFooter__item {
+    text-align: center;
+  }
+}
+.topFooter__iconContainer:not(:last-child) {
+  margin-right: 10px;
+}
+.topFooter__icon {
+  width: 24px;
+  height: 30px;
+}
+.topFooter__linkContainer {
+  text-align: left;
+}
+.topFooter__textLink {
+  font-weight: 600;
+  line-height: 171%;
+  text-decoration: none;
+  color: #ffffff;
+}
+.topFooter__textLink:hover {
+  text-decoration: underline;
+}
+
+.topFooter__listTitle {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.1px;
+  color: #ffffff;
+  margin: 0;
+  white-space: nowrap;
+}
+.topFooter__listTitle:not(:last-child) {
+  margin-bottom: 20px;
+}
+@media (max-width: 425px) {
+  .topFooter__listTitle:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 768px) {
+  .topFooter__listTitle {
+    text-align: center;
+  }
+}
+.topFooter__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+@media (max-width: 425px) {
+  .topFooter__list {
+    height: 0;
+  }
+}
+.topFooter__triangle {
+  display: none;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-left-color: #ffffff;
+  transform-origin: center left;
+  transform: rotate(45deg);
+}
+@media (max-width: 425px) {
+  .topFooter__triangle {
+    display: inline-block;
+    transition: 0.3s;
+  }
+}
+.topFooter__listContainer.footerActiveList .topFooter__list {
+  height: auto;
+}
+@media (max-width: 425px) {
+  .topFooter__listContainer.footerActiveList .topFooter__listTitle {
+    text-decoration: underline;
+  }
+  .topFooter__listContainer.footerActiveList .topFooter__listTitle:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.topFooter__listContainer.footerActiveList .topFooter__triangle {
+  transform: rotate(90deg);
+}

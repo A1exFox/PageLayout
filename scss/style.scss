@@ -926,4 +926,126 @@ body {
 // =========================================[footer]
 .footer {
   flex: 0 0 auto;
+  &__top {}
 }
+// =================[topFooter][desktop]
+.topFooter {
+  background: $secondaryColor2;
+  &__pageContainer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  &__contentContainer {
+    display: flex;
+    align-items: flex-start;
+    margin: -1.39%;
+    @media (max-width:768px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: -20px;
+    }
+  }
+  &__listContainer {
+    flex: 0 1 auto;
+    padding: 1.39%;
+    @media (max-width:768px) {
+      flex: 1 0 50%;
+      padding: 20px;
+      max-width: 500px;
+    }
+    @media (max-width:425px) {
+      flex: 1 0 100%;
+    }
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    &_flex {
+      display: flex;
+      align-items: center;
+    }
+    @media (max-width:768px) {
+      text-align: center;
+    }
+  }
+  &__iconContainer {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+  &__icon {
+    width: 24px;
+    height: 30px;
+  }
+  &__linkContainer {
+    text-align: left;
+  }
+  &__textLink {
+    @include link();
+    color: $lightTextColor;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+// =================[topFooter][list]
+.topFooter {
+  // =================[unactiveMenu]
+  &__listTitle {
+    @include h5();
+    color: $lightTextColor;
+    margin: 0;
+    white-space: nowrap;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+      @media (max-width:425px) {
+        margin-bottom: 0;
+      }
+    }
+    @media (max-width:768px) {
+      text-align: center;
+    }
+  }
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    @media (max-width:425px) {
+      height: 0;
+    }
+  }
+  &__triangle {
+    display: none;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-left-color: $lightTextColor;
+    transform-origin: center left;
+    transform: rotate(45deg);
+    @media (max-width:425px) {
+      display: inline-block;
+      transition: 0.3s;
+    }
+  }
+  // =================[activeMenu]
+  &__listContainer.footerActiveList {
+    & .topFooter__list {
+      height: auto;
+    }
+    & .topFooter__listTitle {
+      @media (max-width:425px) {
+        text-decoration: underline;
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    & .topFooter__triangle {
+      transform: rotate(90deg);
+    }
+  }
+}
+// =================[downFooter]
