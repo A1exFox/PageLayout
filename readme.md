@@ -2,5 +2,4 @@
 
 | GH deploy | Source |
 |-----------|--------|
-| <a href="https://a1exfox.github.io/FreelancerLifeStyle/Relvise/" target="_blank">Relvise</a> |  |
 | [Relvise](https://a1exfox.github.io/FreelancerLifeStyle/Relvise/) | [`Stream #1`](https://www.youtube.com/watch?v=f-irDQwt1l4) [`Stream #2`](https://www.youtube.com/watch?v=0UUK4VDblXM) |
